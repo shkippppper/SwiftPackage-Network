@@ -9,7 +9,7 @@ public enum NetworkError: Error {
     case decodingError
 }
 
-public class NetworkManager {
+public class NetworkingPackage {
     public init() {}
     
     public func fetchData<T: Codable>(url: URL, parse: @escaping (Data) -> T?, completion: @escaping (Result<T?, NetworkError>) -> Void) {
